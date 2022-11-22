@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(18, 18, 18);
+    color: white;
+}
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: white;
+}
+.firstSection, .secondSection, .thirdSection{
+    margin-top: 150px;
+}
+.firstSection{
+    margin-top: 100px;
+}
+.secondSection{
+    background-color: white;
+    color: black;
+    margin-bottom: 400px;
+    margin-top: 200px;
+    padding-bottom: 300px;
+    padding-top: 300px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mainTitle{
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+.content{
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .image{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+.content .image img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.content .infoBox{
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 0px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+}
+.content .infoBox h3{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.icon{
+    color: white;
+}
+.sectionTitle{
+    font-size: 3em;
+    margin-bottom: 80px;
+}
+.infoTitle{
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.infoBox2{
+    width: 700px;
+    margin-left: 50px;
+}
+.mediaInfo{
+    width: 400px;
+    margin-left: 50px;
+}
+.mediaInfo li{
+    list-style: none;
+    font-size: 1.4em;
+}
+.mediaInfo li a{
+    color: white;
+    text-decoration: none;
+}
+.mediaInfo li:not(:last-child){
+    margin-bottom: 50px;
+}
+.mediaInfo li:nth-child(1){
+    padding-left: 0px;   
+}
+.mediaInfo li:nth-child(3){
+    padding-left: 100px;   
+}
+.mediaInfo li:nth-child(2){
+    padding-left: 50px;   
+}
+.thirdSection{
+    margin-bottom: 100px;
+}
