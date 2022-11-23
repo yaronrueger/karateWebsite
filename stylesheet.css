@@ -6,11 +6,16 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 html{
     scroll-behavior: smooth;
 }
 body{
     background-color: rgb(18, 18, 18);
+    background-image: linear-gradient(black, white);
     color: white;
 }
 section{
@@ -21,20 +26,28 @@ section{
     padding: 80px 100px;
     color: white;
 }
+.toolbar{
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    mix-blend-mode: difference;
+}
+.toolbar h1{
+    color: white;
+}
 .firstSection, .secondSection, .thirdSection{
-    margin-top: 150px;
+    margin-bottom: 20%;
 }
 .firstSection{
-    margin-top: 100px;
 }
 .secondSection{
-    background-color: white;
-    color: black;
-    margin-bottom: 400px;
-    margin-top: 200px;
-    padding-bottom: 300px;
-    padding-top: 300px;
+    color: white;
 }
+.thirdSection{
+    color: black;
+    margin-bottom: 0%;
+}
+
 .container{
     position: relative;
     display: flex;
@@ -66,7 +79,23 @@ section{
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:fill;
+    border-radius: 10px;
+}
+.content .imageMain{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+.content .imageMain img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
     border-radius: 10px;
 }
 .content .infoBox{
@@ -107,7 +136,7 @@ section{
     font-size: 1.4em;
 }
 .mediaInfo li a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 .mediaInfo li:not(:last-child){

@@ -13,12 +13,21 @@
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
+    <div class="toolbar">
+      <h1>-</h1>
+      <h1>-</h1>
+      <h1>-</h1>
+      <h1>-</h1>
+      <nav>
+
+      </nav>
+    </div>
     <section class="firstSection">
       <div class="container">
         <h2 class="mainTitle">Karate Verein Gefrees</h2>
         <div class="content">
-          <div class="image">
-            <img src="/pic/DojoGefrees.jpg" alt="" />
+          <div class="imageMain">
+            <img src="/pic/DojoGefreesBlackandWhite.jpg" alt="" />
           </div>
           <div class="infoBox">
             <h3>Karate als Lebensweg</h3>
@@ -34,15 +43,20 @@
     </section>
     <section class="secondSection">
       <div class="container">
-        <h3 class="sectionTitle">Unsere Trainer</h3>
+        <a href="trainer.html" class="trainerSeite"
+          ><h3 class="sectionTitle">Unser Team</h3></a
+        >
         <div class="content">
-          <div class="image">
-            <img src="/pic/Karate-Helmut-Wunderlich.jpg" alt="" />
-          </div>
-          <div class="infoBox2">
-            <h4 class="infoTitle">Description</h4>
-            <p>Lorem ipsum bla bla bla</p>
-          </div>
+          <a href="trainer.html" class="trainerSeite"
+            ><div class="image">
+              <img src="/pic/martial-arts.jpg" alt="" /></div
+          ></a>
+          <a href="trainer.html" class="trainerSeite"
+            ><div class="infoBox2">
+              <h4 class="infoTitle">Willkomen</h4>
+              <p>Lerne unser Team kennen.</p>
+            </div></a
+          >
         </div>
       </div>
     </section>
@@ -72,7 +86,7 @@
             </li>
           </div>
           <div class="image">
-            <img src="/pic/social-network-3873470_1280.jpg" alt="" />
+            <img src="/pic/social-media.png" alt=""/>
           </div>
         </div>
       </div>
@@ -80,8 +94,8 @@
 
     <script>
       ScrollReveal({
-        reset: true,
-        distance: "60px",
+        reset: false,
+        distance: "70px",
         duration: 2500,
         delay: 400,
       });
@@ -90,8 +104,9 @@
         origin: "left",
       });
 
+      ScrollReveal().reveal(".toolbar",{delay: 700, origin:"top",});
 
-      ScrollReveal().reveal(".firstSection .image", {
+      ScrollReveal().reveal(".firstSection .imageMain", {
         delay: 600,
         origin: "bottom",
       });
@@ -100,26 +115,24 @@
         origin: "right",
       });
 
-
       ScrollReveal().reveal(".secondSection .image", {
         delay: 600,
         origin: "bottom",
       });
       ScrollReveal().reveal(".infoBox2", {
-        delay: 700,
+        delay: 600,
         origin: "right",
       });
 
       ScrollReveal().reveal(".thirdSection .image", {
-        delay: 600,
+        delay: 500,
         origin: "bottom",
       });
       ScrollReveal().reveal(".mediaInfo li", {
-        delay: 600,
+        delay: 400,
         origin: "top",
         interval: 200,
       });
-
     </script>
   </body>
 </html>
