@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trainer</title>
     <link rel="stylesheet" type="text/css" href="stylesheetTrainer.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <section class="firstSection">
@@ -13,5 +14,106 @@
         <h2 class="mainTitle">Unsere Trainer</h2>
       </div>
     </section>
+    <section class="secondSection">
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="cardInner">
+            <div class="cardFront">
+              <img src="/pic/Karate-Joachim-Ott-.jpg" alt="">
+            </div>
+            <div class="cardBack">
+              <h1>Jochen Ott</h1>
+              <ul>
+                <li>5. Dan</li>
+                <li>Fachübungsleiter</li>                
+                <li>B - Prüfer</li>                
+                <li>C - Trainer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card cardOdd">
+          <div class="cardInner">
+            <div class="cardFront">
+              <img src="/pic/Karate-Helmut-Wunderlich.jpg" alt="">
+            </div>
+            <div class="cardBack">
+              <h1>card</h1>
+              <p>Text</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardInner">
+            <div class="cardFront">
+              <img src="/pic/Karate-Joerg-Kollera.jpg" alt="">
+            </div>
+            <div class="cardBack">
+              <h1>card</h1>
+              <p>Text</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card cardOdd">
+          <div class="cardInner">
+            <div class="cardFront">
+              <img src="/pic/Max-Dietel.png" alt="">
+            </div>
+            <div class="cardBack">
+              <h1>card</h1>
+              <p>Text</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardInner">
+            <div class="cardFront">
+              <img src="/pic/Kevin-Koch.png" alt="">
+            </div>
+            <div class="cardBack">
+              <h1>card</h1>
+              <p>Text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script>
+    window.addEventListener("load", function(e) {
+      setTimeout(function() {
+      const cards = document.querySelectorAll(".card");
+      for (var i=0; i<cards.length; i++) {
+        cards[i].classList.add("loaded");
+      }
+      }, 1500); 
+    });
+
+      ScrollReveal({
+        reset: false,
+        distance: "70px",
+        duration: 2500,
+        delay: 100,
+      });
+      ScrollReveal().reveal(".firstSection", {
+        delay: 150,
+        origin: "left",
+      });
+      ScrollReveal().reveal(".card", {
+        delay: 150,
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".cardOdd", {
+        delay: 150,
+        origin: "top",
+      });
+    </script>
   </body>
 </html>
