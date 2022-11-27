@@ -5,17 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KarateDojoGefrees</title>
+    <!--Image beim Tab-->
+    <link rel="icon" type="image/x-icon" href="/pic/DojoGefrees.jpg">
+
+    <!--CSS zu index.html-->
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
+
+    <!--font hinzugefügt-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+    <!--Bibliothek für JS ScrollReveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
+
   <body>
-    <div class="toolbar">
-      <a href="">-</a>
+    <!--
+      Menüleiste
+    -->
+    <div class="menu">
+      <!--MenüImage-->
+      <a href="#"><img src="/pic/DojoGefreesBlackandWhite.jpg" alt="" class="icon"></a>
+      <nav>
+        <!--MenüInhalt-->
+        <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="trainer.html">Unser Team</a></li>
+           <li><a href="#">Leistungen</a></li>
+           <li><a href="#">Kontakt</a></li>
+           <li><a href="#socialMedia">SocialMedia</a></li>
+       </ul>
+     </nav>
     </div>
+
+    <!-- 
+    firstSection
+    -->
     <section class="firstSection">
       <div class="container">
         <h2 class="mainTitle">Karate Verein Gefrees</h2>
@@ -35,10 +59,14 @@
         </div>
       </div>
     </section>
+
+    <!--
+      secondSection
+    -->
     <section class="secondSection">
       <div class="container">
-        <a href="trainer.html" class="trainerSeite"
-          ><h3 class="sectionTitle">Unser Team</h3></a
+        <a href="trainer.html" class="trainerSeite">
+          <h3 class="sectionTitle">Unser Team</h3></a
         >
         <div class="content">
           <a href="trainer.html" class="trainerSeite"
@@ -54,29 +82,30 @@
         </div>
       </div>
     </section>
+
+    <!--
+      thirdSection
+    -->
     <section class="thirdSection">
       <div class="container">
-        <h3 class="sectionTitle">Social Media</h3>
+        <h3 class="sectionTitle" id="socialMedia">Social Media</h3>
         <div class="content">
           <div class="mediaInfo">
             <li>
               <a
                 href="https://m.facebook.com/people/Karate-Dojo-Gefrees/100069451681218/"
                 class="icon"
-                ><i class="fab fa-facebook"></i> Facebook</a
-              >
+                ><i class="fab fa-facebook"></i> Facebook</a>
             </li>
             <li>
               <a
                 href="https://www.instagram.com/karate_dojo_gefrees/"
                 class="icon"
-                ><i class="fab fa-instagram"></i> Instagram</a
-              >
+                ><i class="fab fa-instagram"></i> Instagram</a>
             </li>
             <li>
               <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc" class="icon"
-                ><i class="fab fa-youtube"></i> Youtube</a
-              >
+                ><i class="fab fa-youtube"></i> Youtube</a>
             </li>
           </div>
           <div class="image">
@@ -86,13 +115,46 @@
       </div>
     </section>
 
+    <!--
+      fourth Section
+    -->
+    <section class="fourthSection">
+      <div class="container">
+        <h3 class="memorieTitle">Rückblicke</h3>
+        <div class="content">
+          <div class="rueckblickImage">
+            <img src="/pic/memorie.png" alt="">
+          </div>
+          <div class="infoMemorie">
+            <h3>Die letzten Jahre</h3>
+            <p>
+              Schau dir unsere Rückblicke der letzten Jahre gemeinsam als Verein an.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      -----------------------------------------------------------------
+      ---------------------------JS-Code-------------------------------
+      -----------------------------------------------------------------
+    -->
     <script>
+      /* ScrollReveal allg. Einstellungen */
       ScrollReveal({
         reset: false,
         distance: "70px",
         duration: 2500,
         delay: 100,
       });
+
+      /* genaue Definierung der einzelnen Divs */
+      ScrollReveal().reveal(".menu", {
+        delay: 150,
+        origin: "top",
+      });
+
       ScrollReveal().reveal(".mainTitle, .sectionTitle", {
         delay: 150,
         origin: "left",
@@ -106,6 +168,7 @@
         delay: 150,
         origin: "bottom",
       });
+
       ScrollReveal().reveal(".infoBox", {
         delay: 200,
         origin: "right",
@@ -115,6 +178,7 @@
         delay: 150,
         origin: "bottom",
       });
+
       ScrollReveal().reveal(".infoBox2", {
         delay: 150,
         origin: "right",
@@ -124,11 +188,13 @@
         delay: 145,
         origin: "bottom",
       });
+
       ScrollReveal().reveal(".mediaInfo li", {
         delay: 100,
         origin: "top",
         interval: 50,
       });
     </script>
+
   </body>
 </html>

@@ -7,113 +7,43 @@
     <title>Trainer</title>
     <link rel="stylesheet" type="text/css" href="stylesheetTrainer.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/gsap@3.11.3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.11.3/dist/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="/cards.js" defer></script>
   </head>
   <body>
+    <div class="menu">
+      <a href="index.html"><img src="/pic/DojoGefreesBlackandWhite.jpg" alt="" class="icon"></a>
+      <nav>
+        <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="trainer.html">Unser Team</a></li>
+           <li><a href="#">Leistungen</a></li>
+           <li><a href="#">Kontakt</a></li>
+           <li><a href="index.html#socialMedia">SocialMedia</a></li>
+       </ul>
+     </nav>
+    </div>
     <section class="firstSection">
-      <div class="container">
-        <h2 class="mainTitle">Unsere Trainer</h2>
-      </div>
-    </section>
-    <section class="secondSection">
-
-      <div class="cards">
-
-        <div class="card">
-          <div class="cardInner">
-            <div class="cardFront">
-              <img src="/pic/Karate-Joachim-Ott-.jpg" alt="">
-            </div>
-            <div class="cardBack">
-              <h1>Jochen Ott</h1>
-              <ul>
-                <li>5. Dan</li>
-                <li>Fachübungsleiter</li>                
-                <li>B - Prüfer</li>                
-                <li>C - Trainer</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="card cardOdd">
-          <div class="cardInner">
-            <div class="cardFront">
-              <img src="/pic/Karate-Helmut-Wunderlich.jpg" alt="">
-            </div>
-            <div class="cardBack">
-              <h1>card</h1>
-              <p>Text</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="cardInner">
-            <div class="cardFront">
-              <img src="/pic/Karate-Joerg-Kollera.jpg" alt="">
-            </div>
-            <div class="cardBack">
-              <h1>card</h1>
-              <p>Text</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card cardOdd">
-          <div class="cardInner">
-            <div class="cardFront">
-              <img src="/pic/Max-Dietel.png" alt="">
-            </div>
-            <div class="cardBack">
-              <h1>card</h1>
-              <p>Text</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="cardInner">
-            <div class="cardFront">
-              <img src="/pic/Kevin-Koch.png" alt="">
-            </div>
-            <div class="cardBack">
-              <h1>card</h1>
-              <p>Text</p>
-            </div>
-          </div>
+      <div class="gallery">
+        <div class="header"><h1>Unser Trainerteam</h1></div>
+        <ul class="cards">
+          <li><img src="/pic/Karate-Joachim-Ott-.jpg" alt="">
+            <h6>Joachim Ott</h6>  
+            <p>1. Dan</p>
+          </li>
+          <li><img src="/pic/Karate-Helmut-Wunderlich.jpg" alt=""></li>
+          <li><img src="/pic/Karate-Joerg-Kollera.jpg" alt=""></li>
+          <li><img src="/pic/Max-Dietel.png" alt=""></li>
+          <li><img src="/pic/Kevin-Koch.png" alt=""></li>
+          <li><img src="/pic/Kevin-Koch.png" alt=""></li>
+          <li><img src="/pic/Kevin-Koch.png" alt=""></li>
+        </ul>
+        <div class="actions">
+          <button class="prev"><</button>
+          <button class="next">></button>
         </div>
       </div>
     </section>
-
-
-    <script>
-    window.addEventListener("load", function(e) {
-      setTimeout(function() {
-      const cards = document.querySelectorAll(".card");
-      for (var i=0; i<cards.length; i++) {
-        cards[i].classList.add("loaded");
-      }
-      }, 1500); 
-    });
-
-      ScrollReveal({
-        reset: false,
-        distance: "70px",
-        duration: 2500,
-        delay: 100,
-      });
-      ScrollReveal().reveal(".firstSection", {
-        delay: 150,
-        origin: "left",
-      });
-      ScrollReveal().reveal(".card", {
-        delay: 150,
-        origin: "bottom",
-      });
-      ScrollReveal().reveal(".cardOdd", {
-        delay: 150,
-        origin: "top",
-      });
-    </script>
   </body>
 </html>

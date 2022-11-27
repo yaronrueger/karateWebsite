@@ -15,8 +15,53 @@ html{
 }
 body{
     background-color: rgb(18, 18, 18);
-    background-image: linear-gradient(black, white);
+    background-image: linear-gradient(rgb(0, 0, 0), white);
     color: white;
+    min-height: 100vh;
+}
+.menu{
+    height: 7vh;
+    background-color: rgba(0, 0, 0, 0.820);
+    border-width: 0px;
+    border-color: white;
+    border-style: groove;
+    position: fixed;
+    position: -webkit-fixed;
+    position: -moz-fixed;
+    position: -ms-fixed;
+    position: -o-fixed;
+    width: 100%;
+    z-index: 300;
+    overflow: hidden;
+}
+
+.menu img{
+    width: 8vh;
+    padding-left: 10px;
+
+}
+
+.menu ul{
+    list-style: none;
+}
+nav{
+    float: right;
+}
+.menu li{
+    display: inline;
+    padding: 15px
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding-top: 15px
+}
+nav a:active{
+    font-weight: bold;
+}
+nav a:hover{
+    color: rgb(139, 139, 139);
 }
 section{
     position: relative;
@@ -26,26 +71,16 @@ section{
     padding: 80px 100px;
     color: white;
 }
-.toolbar{
-    position: fixed;
-    right: 1%;
-    bottom: 1%;
-    mix-blend-mode: difference;
-}
-.toolbar h1{
-    color: white;
-}
-.firstSection, .secondSection, .thirdSection{
+.firstSection, .secondSection{
     margin-bottom: 10%;
-}
-.firstSection{
 }
 .secondSection{
     color: white;
+    margin-left: 5%;
 }
 .thirdSection{
     color: black;
-    margin-bottom: 0%;
+    margin-bottom: 0% !important;
 }
 
 .container{
