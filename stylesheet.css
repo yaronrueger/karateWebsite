@@ -1,24 +1,36 @@
+/*Fonts eingefügt*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800');
 
+/*generelle Einstellungen(Fonts etc.)*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 a{
     text-decoration: none;
     color: white;
 }
+
+/*Animation um zu Überschriften zu springen*/
 html{
     scroll-behavior: smooth;
 }
+
 body{
     background-color: rgb(18, 18, 18);
+    /*Wechsel der Hintergrundfarbe*/
     background-image: linear-gradient(rgb(0, 0, 0), white);
     color: white;
+    /*mind. Größe 100vh->Display groß*/
     min-height: 100vh;
+    /*kein scrolling nach links oder rechts*/
+    overflow-x: hidden;
 }
+
+/*Menüleiste oben*/
 .menu{
     height: 7vh;
     background-color: rgba(0, 0, 0, 0.820);
@@ -35,34 +47,48 @@ body{
     overflow: hidden;
 }
 
+/*Icon links an der Menüleiste*/
 .menu img{
     width: 8vh;
     padding-left: 10px;
 
 }
 
+/*Menüelementmenge*/
 .menu ul{
     list-style: none;
 }
+
+/*Position der Menüelemente*/
 nav{
     float: right;
 }
+
+/*einzelne Menüelemente*/
 .menu li{
     display: inline;
     padding: 15px
 }
+
+/*Links der Menüelemente zu den entsprechenden Inhalten*/
 nav a{
     text-decoration: none;
     color: white;
     display: inline-block;
     padding-top: 15px
 }
+/*Menüelemente wenn man drauf klickt*/
 nav a:active{
     font-weight: bold;
 }
+
+/*Menüelemente wenn man drauf hovert*/
 nav a:hover{
     color: rgb(139, 139, 139);
 }
+/*------------Menü Ende-----------------------*/
+
+/*allgemeine Sectionverhalten*/
 section{
     position: relative;
     display: flex;
@@ -71,18 +97,22 @@ section{
     padding: 80px 100px;
     color: white;
 }
-.firstSection, .secondSection{
+
+.firstSection, .secondSection, .thirdSection{
     margin-bottom: 10%;
 }
+
 .secondSection{
     color: white;
     margin-left: 5%;
 }
-.thirdSection{
+
+.fourthSection{
     color: black;
-    margin-bottom: 0% !important;
+    margin-bottom: 0%;
 }
 
+/*Hauptdiv in der section*/
 .container{
     position: relative;
     display: flex;
@@ -90,10 +120,14 @@ section{
     align-items: center;
     flex-direction: column;
 }
+
+/*Hauptüberschrift von firstSection*/
 .mainTitle{
     font-size: 4em;
     margin-bottom: 50px;
 }
+
+/*Inhalt der Section nach der Hauptüberschrift*/
 .content{
     position: relative;
     width: 1150px;
@@ -101,12 +135,16 @@ section{
     justify-content: center;
     align-items: center;
 }
+
+/*ImageDiv zum Inhalt aller Section außer firstSection*/
 .content .image{
     position: relative;
     width: 800px;
     height: 400px;
     overflow: hidden;
 }
+
+/*konkretes Image des Inhalts von allen Section außer firstSection*/
 .content .image img{
     z-index: 111;
     position: absolute;
@@ -117,12 +155,16 @@ section{
     object-fit:fill;
     border-radius: 10px;
 }
+
+/*ImageDiv der firstSection*/
 .content .imageMain{
     position: relative;
     width: 800px;
     height: 400px;
     overflow: hidden;
 }
+
+/*Image von firstSection*/
 .content .imageMain img{
     z-index: 111;
     position: absolute;
@@ -133,6 +175,8 @@ section{
     object-fit:cover;
     border-radius: 10px;
 }
+
+/*Infobox von firstSection*/
 .content .infoBox{
     z-index: 222;
     background: rgba(255, 255, 255, 0.1);
@@ -143,49 +187,76 @@ section{
     border-radius: 10px;
     transform: translate(-80px, 50px);
 }
+
+/*Überschrift von Infobox in firstSection*/
 .content .infoBox h3{
     font-size: 2em;
     margin-bottom: 10px;
 }
+
+/*Icons von Menüleiste und SocialMedia Section*/
 .icon{
     color: white;
 }
+
+/*Hauptüberschrift der Sections außer first Section*/
 .sectionTitle{
     font-size: 3em;
     margin-bottom: 80px;
 }
+
+/*Teilüberschrift secondSection und thirdSection*/
 .infoTitle{
     font-size: 1.8em;
     margin-bottom: 10px;
 }
+
+/*infoBox thirdSection*/
+.infoMemorie{
+    width: 700px;
+    margin-left: 50px;
+}
+
+/*infoBox secondSection*/
 .infoBox2{
     width: 700px;
     margin-left: 50px;
 }
+
+/*Div der socialMediaLinks*/
 .mediaInfo{
     width: 400px;
     margin-left: 50px;
 }
+
+/*listenelemente des SocialMediaLinksDivs*/
 .mediaInfo li{
     list-style: none;
     font-size: 1.4em;
 }
+
+/*Links der SocialMedialistenelemente*/
 .mediaInfo li a{
     color: black;
     text-decoration: none;
 }
+
+/*Keine Ahnung mehr*/
 .mediaInfo li:not(:last-child){
     margin-bottom: 50px;
 }
+
+/*Posiion des ersten socialMediaLinks*/
 .mediaInfo li:nth-child(1){
     padding-left: 0px;   
 }
+
+/*Posiion des dritten socialMediaLinks*/
 .mediaInfo li:nth-child(3){
     padding-left: 100px;   
 }
+
+/*Posiion des zweiten socialMediaLinks*/
 .mediaInfo li:nth-child(2){
     padding-left: 50px;   
-}
-.thirdSection{
-    margin-bottom: 100px;
 }

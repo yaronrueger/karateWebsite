@@ -7,9 +7,12 @@ ToDo:
     - hauptseite erstellen
     - Teil bei index einfügen
 - Code kommentieren
+-JS Code extra speichern
 
 
 # Index-Allgemeiner Aufbau:
+
+HMTL:
 
 <section class="!nameDerSection!">
       <div class="container">
@@ -27,4 +30,6 @@ ToDo:
         </div>
       </div>
     </section>
-    
+
+CSS:
+

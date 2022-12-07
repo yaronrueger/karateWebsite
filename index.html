@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KarateDojoGefrees</title>
     <!--Image beim Tab-->
-    <link rel="icon" type="image/x-icon" href="/pic/DojoGefrees.jpg">
+    <link rel="icon" type="image/x-icon" href="/pic/DojoGefrees.jpg" />
 
     <!--CSS zu index.html-->
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
     <!--font hinzugefügt-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
 
     <!--Bibliothek für JS ScrollReveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -24,17 +27,19 @@
     -->
     <div class="menu">
       <!--MenüImage-->
-      <a href="#"><img src="/pic/DojoGefreesBlackandWhite.jpg" alt="" class="icon"></a>
+      <a href="#"
+        ><img src="/pic/DojoGefreesBlackandWhite.jpg" alt="" class="icon"
+      /></a>
       <nav>
         <!--MenüInhalt-->
         <ul>
-           <li><a href="#">Home</a></li>
-           <li><a href="trainer.html">Unser Team</a></li>
-           <li><a href="#">Leistungen</a></li>
-           <li><a href="#">Kontakt</a></li>
-           <li><a href="#socialMedia">SocialMedia</a></li>
-       </ul>
-     </nav>
+          <li><a href="#">Home</a></li>
+          <li><a href="trainer.html">Unser Team</a></li>
+          <li><a href="rueckblicke.html">Rückblicke</a></li>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#socialMedia">SocialMedia</a></li>
+        </ul>
+      </nav>
     </div>
 
     <!-- 
@@ -84,32 +89,21 @@
     </section>
 
     <!--
-      thirdSection
+      third Section
     -->
     <section class="thirdSection">
       <div class="container">
-        <h3 class="sectionTitle" id="socialMedia">Social Media</h3>
+        <h3 class="sectionTitle">Rückblicke</h3>
         <div class="content">
-          <div class="mediaInfo">
-            <li>
-              <a
-                href="https://m.facebook.com/people/Karate-Dojo-Gefrees/100069451681218/"
-                class="icon"
-                ><i class="fab fa-facebook"></i> Facebook</a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/karate_dojo_gefrees/"
-                class="icon"
-                ><i class="fab fa-instagram"></i> Instagram</a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc" class="icon"
-                ><i class="fab fa-youtube"></i> Youtube</a>
-            </li>
-          </div>
           <div class="image">
-            <img src="/pic/social-media.png" alt=""/>
+            <img src="/pic/memorie.png" alt="" />
+          </div>
+          <div class="infoMemorie">
+            <h3 class="infoTitle">Die letzten Jahre</h3>
+            <p>
+              Schau dir unsere Rückblicke der letzten Jahre gemeinsam als Verein
+              an.
+            </p>
           </div>
         </div>
       </div>
@@ -120,20 +114,37 @@
     -->
     <section class="fourthSection">
       <div class="container">
-        <h3 class="memorieTitle">Rückblicke</h3>
+        <h3 class="sectionTitle" id="socialMedia">Social Media</h3>
         <div class="content">
-          <div class="rueckblickImage">
-            <img src="/pic/memorie.png" alt="">
+          <div class="mediaInfo">
+            <li>
+              <a
+                href="https://m.facebook.com/people/Karate-Dojo-Gefrees/100069451681218/"
+                class="icon"
+                ><i class="fab fa-facebook"></i> Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/karate_dojo_gefrees/"
+                class="icon"
+                ><i class="fab fa-instagram"></i> Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc" class="icon"
+                ><i class="fab fa-youtube"></i> Youtube</a
+              >
+            </li>
           </div>
-          <div class="infoMemorie">
-            <h3>Die letzten Jahre</h3>
-            <p>
-              Schau dir unsere Rückblicke der letzten Jahre gemeinsam als Verein an.
-            </p>
+          <div class="image">
+            <img src="/pic/social-media.png" alt="" />
           </div>
         </div>
       </div>
     </section>
+
+    
 
     <!--
       -----------------------------------------------------------------
@@ -160,10 +171,6 @@
         origin: "left",
       });
 
-      ScrollReveal().reveal(".toolbar",
-      {delay: 150, origin:"top",
-      });
-
       ScrollReveal().reveal(".firstSection .imageMain", {
         delay: 150,
         origin: "bottom",
@@ -184,9 +191,20 @@
         origin: "right",
       });
 
-      ScrollReveal().reveal(".thirdSection .image", {
+      /**/
+      ScrollReveal().reveal(".thirdSection .image",{
+        delay: 145,
+        origin: "left",
+      });
+
+      ScrollReveal().reveal(".fourthSection, .image", {
         delay: 145,
         origin: "bottom",
+      });
+
+      ScrollReveal().reveal(".infoMemorie", {
+        delay: 145,
+        origin: "right",
       });
 
       ScrollReveal().reveal(".mediaInfo li", {
@@ -195,6 +213,5 @@
         interval: 50,
       });
     </script>
-
   </body>
 </html>
