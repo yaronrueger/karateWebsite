@@ -10,6 +10,20 @@ ToDo:
 -JS Code extra speichern
 
 
+wichtige Links:
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_grid_responsive
+
+https://www.w3schools.com/howto/howto_css_image_overlay.asp
+
+https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+
+https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp
+
+https://www.w3schools.com/css/css3_images.asp
+
+
+SynthWave '84
+
 # Index-Allgemeiner Aufbau:
 
 HMTL:
