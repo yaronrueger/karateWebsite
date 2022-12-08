@@ -1,4 +1,4 @@
- /* ScrollReveal allg. Einstellungen */
+ /* ScrollReveal allg. Einstellungen */ 
  ScrollReveal({
     reset: false,
     distance: "70px",
