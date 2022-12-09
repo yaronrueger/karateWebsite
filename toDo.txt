@@ -1,0 +1,6 @@
+ToDo:
+    -ScrollReveal fix
+    -(vll.) externe Textdateien ändern
+    -Teamseite
+    -RückblickSeite
+    
