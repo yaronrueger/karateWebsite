@@ -8,6 +8,7 @@ ToDo:
     - Teil bei index einfügen
 - Code kommentieren
 -JS Code extra speichern
+- test
 
 
 wichtige Links:
