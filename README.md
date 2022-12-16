@@ -9,6 +9,7 @@ ToDo:
 - Code kommentieren
 -JS Code extra speichern
 - test
+- MERGE request auf den main
 
 
 wichtige Links:
