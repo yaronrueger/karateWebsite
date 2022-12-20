@@ -4,10 +4,9 @@ ToDo:
     - Bilder anpassen
     - Text hinzufügen
 - BilderSeite
-    - hauptseite erstellen
-    - Teil bei index einfügen
-- Code kommentieren
--JS Code extra speichern
+    - Bilder hinzufügen
+- Code kommentieren Teil 2
+- Überagng bei Rueckblicke
 
 
 wichtige Links:

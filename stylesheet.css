@@ -22,7 +22,7 @@ html{
 body{
     background-color: rgb(18, 18, 18);
     /*Wechsel der Hintergrundfarbe*/
-    background-image: linear-gradient(rgb(0, 0, 0), white);
+    background-image: linear-gradient(#181818, white);
     color: white;
     /*mind. Größe 100vh->Display groß*/
     min-height: 100vh;
@@ -32,8 +32,8 @@ body{
 
 /*Menüleiste oben*/
 .menu{
-    height: 7vh;
-    background-color: rgba(0, 0, 0, 0.820);
+    height: 51px;
+    background-color: #181818d0;
     border-width: 0px;
     border-color: white;
     border-style: groove;
@@ -49,7 +49,7 @@ body{
 
 /*Icon links an der Menüleiste*/
 .menu img{
-    width: 8vh;
+    width: 60px;
     padding-left: 10px;
 
 }

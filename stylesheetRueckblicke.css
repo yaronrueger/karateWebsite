@@ -1,3 +1,114 @@
-body{
-    background-color: rebeccapurple;
+
+/*Menüleiste oben*/
+.menu{
+    height: 51px;
+    background-color: #181818ee;
+    border-width: 0px;
+    border-color: white;
+    border-style: groove;
+    position: fixed;
+    position: -webkit-fixed;
+    position: -moz-fixed;
+    position: -ms-fixed;
+    position: -o-fixed;
+    width: 100%;
+    z-index: 300;
+    overflow: hidden;
 }
+
+/*Icon links an der Menüleiste*/
+.menu img{
+    width: 60px;
+    padding-left: 10px;
+
+}
+
+/*Menüelementmenge*/
+.menu ul{
+    list-style: none;
+}
+
+/*Position der Menüelemente*/
+nav{
+    float: right;
+}
+
+/*einzelne Menüelemente*/
+.menu li{
+    display: inline;
+    padding: 15px
+}
+
+/*Links der Menüelemente zu den entsprechenden Inhalten*/
+nav a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding-top: 15px
+}
+/*Menüelemente wenn man drauf klickt*/
+nav a:active{
+    font-weight: bold;
+}
+
+/*Menüelemente wenn man drauf hovert*/
+nav a:hover{
+    color: rgb(139, 139, 139);
+}
+/*------------Menü Ende-----------------------*/
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    background-color: white;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  section{
+    padding-top: 55px !important;
+  }

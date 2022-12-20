@@ -5,7 +5,7 @@
     duration: 2500,
     delay: 100,
   });
-
+  
   /* genaue Definierung der einzelnen Divs */
   ScrollReveal().reveal(".menu", {
     delay: 150,
