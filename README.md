@@ -7,6 +7,10 @@ ToDo:
     - Bilder hinzufügen
 - Code kommentieren Teil 2
 - Überagng bei Rueckblicke
+    - hauptseite erstellen
+    - Teil bei index einfügen
+- Code kommentieren
+-JS Code extra speichern
 
 
 wichtige Links:
