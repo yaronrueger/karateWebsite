@@ -98,7 +98,7 @@ section{
     color: white;
 }
 
-.firstSection, .secondSection, .thirdSection{
+.firstSection, .secondSection, .secondOneSection, .thirdOneSection, .thirdSection{
     margin-bottom: 10%;
 }
 
@@ -107,6 +107,12 @@ section{
     margin-left: 5%;
 }
 
+.thirdSection{
+    color: black;
+}
+.thirdOneSection{
+    color: black;
+}
 .fourthSection{
     color: black;
     margin-bottom: 0%;
@@ -144,7 +150,7 @@ section{
     overflow: hidden;
 }
 
-/*konkretes Image des Inhalts von allen Section außer firstSection*/
+/*konkretes Image des Inhalts von allen Section außer firstSection & secondOneSection*/
 .content .image img{
     z-index: 111;
     position: absolute;
@@ -155,7 +161,16 @@ section{
     object-fit:fill;
     border-radius: 10px;
 }
-
+.content .imageKontakt img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    object-fit:contain;
+    border-radius: 10px;
+}
 /*ImageDiv der firstSection*/
 .content .imageMain{
     position: relative;

@@ -37,15 +37,34 @@
     origin: "right",
   });
 
+  ScrollReveal().reveal(".secondOneSection .image", {
+    delay: 150,
+    origin: "right",
+  });
+
+  ScrollReveal().reveal(".infoTraining", {
+    delay: 145,
+    origin: "bottom",
+  });  
   /**/
   ScrollReveal().reveal(".thirdSection .image",{
     delay: 145,
-    origin: "left",
+    origin: "bottom",
   });
 
-  ScrollReveal().reveal(".fourthSection, .image", {
+  ScrollReveal().reveal(".thirdOneSection .image",{
     delay: 145,
-    origin: "bottom",
+    origin: "right",
+  });
+
+  ScrollReveal().reveal(".infoKontakt",{
+    delay: 145,
+    origin: "top",
+  });
+
+  ScrollReveal().reveal(".fourthSection .image", {
+    delay: 145,
+    origin: "right",
   });
 
   ScrollReveal().reveal(".infoMemorie", {
