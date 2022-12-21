@@ -20,7 +20,7 @@ html{
 }
 
 body{
-    background-color: #252525;
+    background-color: #161f30;
     color: white;
     /*mind. Größe 100vh->Display groß*/
     min-height: 100vh;
@@ -31,7 +31,7 @@ body{
 /*Menüleiste oben*/
 .menu{
     height: 51px;
-    background-color: #181818d0;
+    background-color: #0d131dc7;
     border-width: 0px;
     border-color: white;
     border-style: groove;
@@ -98,6 +98,7 @@ ul{
 h1{
     text-align: center;
     padding-bottom: 50px;
+    font-size: 4em;
 }
 .flex{
     padding-left: 50px;
