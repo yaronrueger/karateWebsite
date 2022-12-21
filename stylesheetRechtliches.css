@@ -86,14 +86,26 @@ nav a:hover{
 }
 /*------------Menü Ende-----------------------*/
 
-section{
+.flex{
     padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+}
+ul{
+    list-style-type: upper-roman;
 }
 h1{
-    font-size: 4em;
     text-align: center;
+    padding-bottom: 50px;
 }
-
-.text{
+.flex{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.datenschutz{
+    margin-top: 20px;
+}
+h2{
     text-align: center;
 }

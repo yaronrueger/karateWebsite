@@ -171,6 +171,25 @@ section{
     object-fit:contain;
     border-radius: 10px;
 }
+
+.content .imageTeam{
+    position: relative;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 60px;
+}
+
+.content .imageTeam img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
 /*ImageDiv der firstSection*/
 .content .imageMain{
     position: relative;
@@ -178,6 +197,7 @@ section{
     height: 400px;
     overflow: hidden;
 }
+
 
 /*Image von firstSection*/
 .content .imageMain img{
@@ -207,11 +227,6 @@ section{
 .content .infoBox h3{
     font-size: 2em;
     margin-bottom: 10px;
-}
-
-/*Icons von Menüleiste und SocialMedia Section*/
-.icon{
-    color: white;
 }
 
 /*Hauptüberschrift der Sections außer first Section*/
@@ -274,4 +289,16 @@ section{
 /*Posiion des zweiten socialMediaLinks*/
 .mediaInfo li:nth-child(2){
     padding-left: 50px;   
+}
+
+.fa-facebook{
+    color: blue;
+}
+
+.fa-instagram{
+    color:#833AB4;
+}
+
+.fa-youtube{
+    color:red;
 }

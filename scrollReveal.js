@@ -27,7 +27,7 @@
     origin: "right",
   });
 
-  ScrollReveal().reveal(".secondSection .image", {
+  ScrollReveal().reveal(".secondSection .imageTeam", {
     delay: 150,
     origin: "bottom",
   });
