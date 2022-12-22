@@ -1,7 +1,7 @@
  /* ScrollReveal allg. Einstellungen */ 
  ScrollReveal({
     reset: false,
-    distance: "70px",
+    distance: "100px",
     duration: 2500,
     delay: 100,
   });
@@ -75,5 +75,61 @@
   ScrollReveal().reveal(".mediaInfo li", {
     delay: 100,
     origin: "top",
+    interval: 50,
+  });
+
+  
+
+  ScrollReveal().reveal(".teamTitle", {
+    delay: 100,
+    origin: "bottom",
+    interval: 50,
+  });
+
+  ScrollReveal().reveal(".Section1 .image", {
+    delay: 100,
+    origin: "left",
+    interval: 50,
+  });
+
+  ScrollReveal().reveal(".Section1 .trainer1", {
+    delay: 100,
+    origin: "left",
+    interval: 50,
+  });
+
+  ScrollReveal().reveal(".Section2 .image", {
+    delay: 100,
+    origin: "right",
+    interval: 50,
+  });
+
+  ScrollReveal().reveal(".Section2 .trainer2", {
+    delay: 100,
+    origin: "right",
+    interval: 50,
+  });
+
+  ScrollReveal().reveal(".Section3 .image", {
+    delay: 100,
+    origin: "left",
+    interval: 50,
+  });
+
+  ScrollReveal().reveal(".Section3 .trainer3", {
+    delay: 100,
+    origin: "left",
+    interval: 50,
+  });
+
+  ScrollReveal().reveal(".Section4 .image", {
+    delay: 100,
+    origin: "right",
+    interval: 50,
+  });
+
+  ScrollReveal().reveal(".Section4 .trainer4", {
+    delay: 100,
+    origin: "right",
     interval: 50,
   });

@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="test.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="test.css" />
+    <!--Bibliothek für JS ScrollReveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
     <!--
       Menüleiste
     -->
     <div class="menu">
       <!--MenüImage-->
-      <a href="#"><img src="/pic/DojoGefrees.jpg" alt="" class="iconMenue" /></a>
+      <a href="#"
+        ><img src="/pic/DojoGefrees.jpg" alt="" class="iconMenue"
+      /></a>
       <nav>
         <!--MenüInhalt-->
         <ul>
@@ -29,39 +32,39 @@
       </nav>
     </div>
 
-
-    <section class="firstSection">
+    <h2 class="teamTitle">Unser Team</h2>
+    <div class="flex">
+      <section class="Section1">
         <div class="container">
-          <h2 class="mainTitle">Unsere Trainer</h2>
           <div class="content">
             <div class="trainer1">
+              <h3 class="infoTitle">Joachim Ott</h3>
+              <p>
+                1. Dan <br />
+                bla <br />
+                bla <br />
+                bla
+              </p>
+            </div>
+            <div class="image">
               <img src="/pic/Karate-Joachim-Ott-.jpg" alt="" />
             </div>
-            <div class="trainerName">
-              <h3>Joachim Ott</h3>
-              <p>
-                1. Dan <br>
-                bla <br>
-                bla <br>
-                bla
-              </p>
-            </div>
           </div>
         </div>
       </section>
 
-      <section class="secondSection">
+      <section class="Section2">
         <div class="container">
           <div class="content">
-            <div class="trainer2">
+            <div class="image">
               <img src="/pic/Karate-Joerg-Kollera.jpg" alt="" />
             </div>
-            <div class="trainerName">
-              <h3>Jörg Kollera</h3>
+            <div class="trainer2">
+              <h3 class="infoTitle">Jörg Kollera</h3>
               <p>
-                1. Dan <br>
-                bla <br>
-                bla <br>
+                1. Dan <br />
+                bla <br />
+                bla <br />
                 bla
               </p>
             </div>
@@ -69,15 +72,15 @@
         </div>
       </section>
 
-      <section class="thirdSection">
+      <section class="Section3">
         <div class="container">
           <div class="content">
             <div class="trainer3">
-              <h3 class="trainerName">Helmut</h3>
+              <h3 class="infoTitle">Helmut</h3>
               <p>
-                1. Dan <br>
-                bla <br>
-                bla <br>
+                1. Dan <br />
+                bla <br />
+                bla <br />
                 bla
               </p>
             </div>
@@ -88,23 +91,26 @@
         </div>
       </section>
 
-      <section class="fourthSection">
+      <section class="Section4">
         <div class="container">
           <div class="content">
-            <div class="trainer4">
-              <img src="/pic/" alt="" />
+            <div class="image">
+              <img src="/pic/Birgit.jpg" alt="" />
             </div>
-            <div class="trainerName">
-              <h3>Jörg Kollera</h3>
+            <div class="trainer4">
+              <h3 class="infoTitle">Birgit Lauterbach</h3>
               <p>
-                1. Dan <br>
-                bla <br>
-                bla <br>
+                1. Dan <br />
+                bla <br />
+                bla <br />
                 bla
               </p>
             </div>
           </div>
         </div>
       </section>
-</body>
+    </div>
+  </body>
+  <!--Javascript einbinden für scrollReveal-->
+  <script src="/scrollReveal.js"></script>
 </html>
