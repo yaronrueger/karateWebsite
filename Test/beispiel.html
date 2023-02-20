@@ -1,16 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <section>
-
-    </section>
-    <section>
-    </section>
-</body>
-</html>
+@keyframes buttonAnim {
+    from {
+    transform: translateY(-50%) rotate(90deg) scale(0.5);
+    }
+    to {
+    transform: translateY(-50%) rotate(90deg) scale(1);
+    }
+    }
+    @keyframes textSlidein {
+    from {
+    right: -300px;
+    }
+    to {
+    right: 20px;
+    }
+    }
+    @keyframes textSlideout {
+    from {
+    right: 20px;
+    }
+    to {
+    right: -300px;
+    }
+    }
+    </style>
+    
+      </head>
+      <body>
+        <button id="myButton">Text anzeigen/verstecken</button>
+        <p id="myText" style="display:none">Dies ist ein Beispiel für festen Text auf meiner Webseite.</p>
+        <script>
+          document.getElementById("myButton").addEventListener("click", function() {
+            var x = document.getElementById("myText");
+            var y = document.getElementById("myButton");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+              x.classList.remove("slideout");
+              x.classList.add("slidein");
+              y.classList.remove("slideout");
+              y.classList.add("slidein");
+            } else {
+              x.classList.remove("slidein");
+              x.classList.add("slideout");
+              y.classList.remove("slidein");
+              y.classList.add("slideout");
+              setTimeout(function() {
+                x.style.display = "none";
+              }, 3000);
+            }
+          });
+        </script>
+      </body>
+    </html>
