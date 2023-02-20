@@ -54,3 +54,6 @@ CSS:
 #181818d0
 Color Menu
 
+transition-timing-function <- für Newsslider
+
+test.html neuere Version für Team(Trainerseite)
