@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+    div.slider-container{
+        width: 35vw;
+        background-color: red;
+        position: absolute;
+        right: -35vw;
+        transition: right 0.3s;
+    }
+
+    button.slideButton{
+        position: absolute;
+        transform: rotate(-90deg);
+        top: 0;
+        left: -33px;
+    }
+
+    div.slider-container.active{
+        right: 10px;
+    }
+
+    div.slider-container > button{
+        position: absolute;
+        top: 0;
+        transform: translate(-70%, 50%) rotate(90deg);
+    }
+    </style>
+
+</head>
+<body>
+  <div class="slider-container">
+    <div class="slider-content">
+        Lorem ipsum dolor sit amet, 
+        consetetur sadipscing elitr, 
+        sed diam nonumy eirmod tempor invidunt ut 
+        labore et dolore magna aliquyam erat, sed diam voluptua. 
+        At vero eos et accusam et justo duo dolores et ea rebum. 
+        Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
+        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
+        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+        labore et dolore magna aliquyam erat, sed diam voluptua. 
+        At vero eos et accusam et justo duo dolores et ea rebum. 
+        Stet clita kasd gubergren, no sea takimata sanctus est 
+        Lorem ipsum dolor sit amet.
+    </div>
+    <button class="slideButton" onclick="document.querySelector('div.slider-container').classList.toggle('active')">Infos</button>
+  </div>
+</body>
+</html>
