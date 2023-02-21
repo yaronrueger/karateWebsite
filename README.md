@@ -1,16 +1,11 @@
 # karateWebsite
 ToDo: 
-- Trainerkarten
-    - Bilder anpassen
-    - Text hinzufügen
+- Trainerseite erweitern (neuer Stand)
 - BilderSeite
     - Bilder hinzufügen
-- Code kommentieren Teil 2
-- Überagng bei Rueckblicke
-    - hauptseite erstellen
-    - Teil bei index einfügen
-- Code kommentieren
+- Übergang bei Rueckblicke
 -JS Code extra speichern
+-Newslider verfeienern
 
 
 wichtige Links:
