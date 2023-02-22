@@ -52,3 +52,5 @@ Color Menu
 transition-timing-function <- für Newsslider
 
 test.html neuere Version für Team(Trainerseite)
+
+https://css-tricks.com/cool-hover-effects-using-background-properties/
