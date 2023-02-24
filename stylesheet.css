@@ -88,6 +88,58 @@ nav a:hover{
 }
 /*------------Menü Ende-----------------------*/
 
+/*Newsslider*/
+div.slider-container{
+        color: white;
+        width: 40vw;
+        background-color: #0d131dc7;
+        backdrop-filter: blur(20px);
+        position: absolute;
+        right: -40vw;
+        transition: right 1s;
+        border-radius: 10px;
+        border-top-left-radius: 0;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 0px;
+        top: 7vh;
+        z-index: 300;
+    }
+
+    button.slideButton{
+        
+        background-color: #0d131dc7;
+        backdrop-filter: blur(20px);
+        border: none;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        transform: translate(-50%, -50%) rotate(-90deg) translate(-50%, -50%);
+
+        border-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        z-index: 300;
+        font-size: 1.0em;
+    }
+
+    div.slider-container.active{
+        right: 10px;
+    }
+
+
 /*allgemeine Sectionverhalten*/
 section{
     position: relative;
