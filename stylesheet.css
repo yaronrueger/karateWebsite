@@ -27,7 +27,7 @@ body{
     /*mind. Größe 100vh->Display groß*/
     min-height: 100vh;
     /*kein scrolling nach links oder rechts*/
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 /*Menüleiste oben*/
@@ -92,25 +92,27 @@ nav a:hover{
 div.slider-container{
         color: white;
         width: 40vw;
-        background-color: #0d131dc7;
-        backdrop-filter: blur(20px);
         position: absolute;
         right: -40vw;
         transition: right 1s;
         border-radius: 10px;
         border-top-left-radius: 0;
+        top: 7vh;
+        z-index: 299;
+    }
+
+    .slider-content{
+        background-color: #0d131dc7;
+        backdrop-filter: blur(5px);
         padding-left: 5px;
         padding-top: 5px;
         padding-bottom: 5px;
         padding-right: 0px;
-        top: 7vh;
-        z-index: 300;
     }
 
     button.slideButton{
         
         background-color: #0d131dc7;
-        backdrop-filter: blur(20px);
         border: none;
         color: rgb(255, 255, 255);
         text-align: center;
@@ -130,13 +132,16 @@ div.slider-container{
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 5px;
+        z-index: 299;
         padding-top: 5px;
-        z-index: 300;
-        font-size: 1.0em;
+        font-size: 1.1em;
+
+        backdrop-filter: blur(5px);
     }
 
     div.slider-container.active{
         right: 10px;
+        
     }
 
 
