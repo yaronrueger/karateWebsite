@@ -14,11 +14,12 @@
     div.slider-container{
         color: white;
         width: 40vw;
-        background-color: #161f3000;
+        background-color: #ff0000;
         position: absolute;
-        right: -40vw;
+        right: -40.5vw;
         transition: right 1s;
         border-radius: 10px;
+        border-top-left-radius: 0;
         padding-left: 5px;
         padding-top: 5px;
         padding-bottom: 5px;
@@ -27,33 +28,33 @@
 
     button.slideButton{
         
-        background-color: #161616a4;
+        background-color: #ff0000;
         border: none;
-        color: white;
-        padding: 15px 32px;
+        color: rgb(255, 255, 255);
         text-align: center;
         text-decoration: none;
         font-size: 16px;
         cursor: pointer;
         
         position: absolute;
-        transform: rotate(-90deg);
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
+
+        transform: translate(-50%, -50%) rotate(-90deg) translate(-50%, -50%);
+
+        border-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        padding-bottom: 5px;
     }
 
 
 
     div.slider-container.active{
         right: 10px;
-        background-color:  #1616169a;
     }
 
-    div.slider-container > button{
-        position: absolute;
-        top: 0;
-        transform: translate(-70%, 50%) rotate(90deg);
-    }
     </style>
 
 </head>

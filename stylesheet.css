@@ -26,7 +26,7 @@ body{
     /*mind. Größe 100vh->Display groß*/
     min-height: 100vh;
     /*kein scrolling nach links oder rechts*/
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 /*Menüleiste oben*/
@@ -86,6 +86,63 @@ nav a:hover{
     color: rgb(139, 139, 139);
 }
 /*------------Menü Ende-----------------------*/
+
+/*Newsslider*/
+div.slider-container{
+        color: white;
+        width: 40vw;
+        position: absolute;
+        right: -40vw;
+        transition: right 1s;
+        border-radius: 10px;
+        border-top-left-radius: 0;
+        top: 7vh;
+        z-index: 299;
+    }
+
+    .slider-content{
+        background-color: #0d131dc7;
+        backdrop-filter: blur(5px);
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 0px;
+    }
+
+    button.slideButton{
+        
+        background-color: #0d131dc7;
+        border: none;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        transform: translate(-50%, -50%) rotate(-90deg) translate(-50%, -50%);
+
+        border-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 5px;
+        z-index: 299;
+        padding-top: 5px;
+        font-size: 1.1em;
+
+        backdrop-filter: blur(5px);
+    }
+
+    div.slider-container.active{
+        right: 10px;
+        
+    }
+
 
 /*allgemeine Sectionverhalten*/
 section{
