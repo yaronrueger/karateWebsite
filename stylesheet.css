@@ -20,7 +20,6 @@ html{
 }
 
 body{
-    background-color: rgb(18, 18, 18);
     /*Wechsel der Hintergrundfarbe*/
     background-image: linear-gradient(#161f30, #e0e1dd);
     color: white;
@@ -301,4 +300,293 @@ section{
 
 .fa-youtube{
     color:red;
+}
+
+
+/*----------------------------------------------------------------Handygröße-----------------------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+
+    body{
+        /*Wechsel der Hintergrundfarbe*/
+        background-image: linear-gradient(#ff0000, #bfff00);
+        color: white;
+        /*mind. Größe 100vh->Display groß*/
+        min-height: 100vh;
+        /*kein scrolling nach links oder rechts*/
+        overflow-x: hidden;
+    }
+
+    /*Menüleiste oben*/
+.menu{
+    height: 30px;
+    background-color: #0d131dc7;
+    border-width: 0px;
+    border-color: white;
+    border-style: groove;
+    position: fixed;
+    position: -webkit-fixed;
+    position: -moz-fixed;
+    position: -ms-fixed;
+    position: -o-fixed;
+    width: 100%;
+    z-index: 300;
+    overflow: hidden;
+}
+
+/*Icon links an der Menüleiste*/
+.menu img{
+    width: 40px;
+    padding-left: 1vh;
+
+}
+
+/*Menüelementmenge*/
+.menu ul{
+    list-style: none;
+}
+
+/*Position der Menüelemente*/
+nav{
+    float: right;
+}
+
+/*einzelne Menüelemente*/
+.menu li{
+    display: inline;
+    padding: 0px;
+    font-size: 5px;
+}
+
+/*Links der Menüelemente zu den entsprechenden Inhalten*/
+nav a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding-top: 15px
+}
+/*Menüelemente wenn man drauf klickt*/
+nav a:active{
+    font-weight: bold;
+}
+
+/*Menüelemente wenn man drauf hovert*/
+nav a:hover{
+    color: rgb(139, 139, 139);
+}
+/*------------Menü Ende-----------------------*/
+
+/*allgemeine Sectionverhalten*/
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: white;
+}
+
+.firstSection, .secondSection, .secondOneSection, .thirdOneSection, .thirdSection{
+    margin-bottom: 10%;
+}
+
+.secondSection{
+    color: white;
+    margin-left: 5%;
+}
+
+.thirdSection{
+    color: black;
+}
+.thirdOneSection{
+    color: black;
+}
+.fourthSection{
+    color: black;
+    margin-bottom: 17vh;
+}
+
+/*Hauptdiv in der section*/
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Hauptüberschrift von firstSection*/
+.mainTitle{
+    font-size: 1em;
+    margin-bottom: 40px;
+}
+
+/*Inhalt der Section nach der Hauptüberschrift*/
+.content{
+    position: relative;
+    width: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ImageDiv zum Inhalt aller Section außer firstSection*/
+.content .image{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    overflow: hidden;
+}
+
+/*konkretes Image des Inhalts von allen Section außer firstSection & secondOneSection*/
+.content .image img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    border-radius: 10px;
+}
+.content .imageKontakt img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9%;
+    height: 100%;
+    object-fit:contain;
+    border-radius: 10px;
+}
+
+.content .imageTeam{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    overflow: hidden;
+    margin-left: 60px;
+}
+
+.content .imageTeam img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+/*ImageDiv der firstSection*/
+.content .imageMain{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    overflow: hidden;
+}
+
+
+/*Image von firstSection*/
+.content .imageMain img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+/*Infobox von firstSection*/
+.content .infoBox{
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 40px;
+    border: 0px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+}
+
+/*Überschrift von Infobox in firstSection*/
+.content .infoBox h3{
+    font-size: 0.2em;
+    margin-bottom: 10px;
+}
+
+/*Hauptüberschrift der Sections außer first Section*/
+.sectionTitle{
+    font-size: 0.2em;
+    margin-bottom: 80px;
+}
+
+/*Teilüberschrift secondSection und thirdSection*/
+.infoTitle{
+    font-size: 0.12em;
+    margin-bottom: 10px;
+}
+
+/*infoBox thirdSection*/
+.infoMemorie{
+    width: 70px;
+    margin-left: 50px;
+}
+
+/*infoBox secondSection*/
+.infoBox2{
+    width: 70px;
+    margin-left: 50px;
+}
+
+/*Div der socialMediaLinks*/
+.mediaInfo{
+    width: 40px;
+    margin-left: 50px;
+}
+
+/*listenelemente des SocialMediaLinksDivs*/
+.mediaInfo li{
+    list-style: none;
+    font-size: 0.1em;
+}
+
+/*Links der SocialMedialistenelemente*/
+.mediaInfo li a{
+    color: black;
+    text-decoration: none;
+}
+
+/*Keine Ahnung mehr*/
+.mediaInfo li:not(:last-child){
+    margin-bottom: 50px;
+}
+
+/*Posiion des ersten socialMediaLinks*/
+.mediaInfo li:nth-child(1){
+    padding-left: 0px;   
+}
+
+/*Posiion des dritten socialMediaLinks*/
+.mediaInfo li:nth-child(3){
+    padding-left: 10px;   
+}
+
+/*Posiion des zweiten socialMediaLinks*/
+.mediaInfo li:nth-child(2){
+    padding-left: 5px;   
+}
+
+.fa-facebook{
+    color: blue;
+}
+
+.fa-instagram{
+    color:#833AB4;
+}
+
+.fa-youtube{
+    color:red;
+}
 }

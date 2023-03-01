@@ -6,6 +6,7 @@ ToDo:
 - Übergang bei Rueckblicke
 -JS Code extra speichern
 -Newslider verfeienern
+-Handygröße miteinbinden
 
 
 wichtige Links:
@@ -19,6 +20,9 @@ https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp
 
 https://www.w3schools.com/css/css3_images.asp
 
+
+
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp  <- Handygröße
 
 SynthWave '84
 
@@ -52,3 +56,5 @@ Color Menu
 transition-timing-function <- für Newsslider
 
 test.html neuere Version für Team(Trainerseite)
+
+
