@@ -5,7 +5,7 @@ ToDo:
     - Bilder hinzufügen
 - Übergang bei Rueckblicke
 -JS Code extra speichern
--Newslider verfeienern
+-Newslider verfeienern -> in eigenes Div setzen, damit es nicht nach rechts versetzt wird beim neuladen der ausgefahren version
 -Handygröße miteinbinden
 
 
