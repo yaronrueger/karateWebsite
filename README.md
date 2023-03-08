@@ -5,7 +5,8 @@ ToDo:
     - Bilder hinzufügen
 - Übergang bei Rueckblicke
 -JS Code extra speichern
--Newslider verfeienern
+-Newslider verfeienern -> in eigenes Div setzen, damit es nicht nach rechts versetzt wird beim neuladen der ausgefahren version
+-Handygröße miteinbinden
 
 
 wichtige Links:
@@ -19,6 +20,9 @@ https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp
 
 https://www.w3schools.com/css/css3_images.asp
 
+
+
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp  <- Handygröße
 
 SynthWave '84
 
@@ -53,4 +57,8 @@ transition-timing-function <- für Newsslider
 
 test.html neuere Version für Team(Trainerseite)
 
+<<<<<<< HEAD
+
+=======
 https://css-tricks.com/cool-hover-effects-using-background-properties/
+>>>>>>> c0e7dd462da8ba4efbbd5dc5147200fd2e08fc04
