@@ -27,7 +27,7 @@ body{
     /*mind. Größe 100vh->Display groß*/
     min-height: 100vh;
     /*kein scrolling nach links oder rechts*/
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 
 /*Menüleiste oben*/
