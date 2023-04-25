@@ -1,181 +1,155 @@
-/*Font einbinden*/
+/*Fonts eingefügt*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800');
 
-/*allg. definieren der Fonts und Größen*/
+/*generelle Einstellungen(Fonts etc.)*/
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body{
-    background-color:  #252525;
-    min-height: 100vh;
-}
-
-/*Menüleiste definieren*/
-.menu{
-  height: 51px;
-  background-color: rgb(0, 0, 0, 820);
-  border-width: 0px;
-  border-color: white;
-  border-style: groove;
-  position: fixed;
-  position: -webkit-fixed;
-  position: -moz-fixed;
-  position: -ms-fixed;
-  position: -o-fixed;
-  width: 100%;
-  z-index: 100;
-  overflow: hidden;
-}
-
-/*Icon der Menüleiste definieren*/
-.menu img{
-  width: 60px;
-  padding-left: 10px;
-
-}
-
-/*Menüinhalt definieren*/
-.menu ul{
-  list-style: none;
-}
-
-/*Position der Menüelemente außer Icon*/
-nav{
-  float: right;
-}
-
-li{
-  display: inline;
-  padding: 15px
-}
-nav a{
-  text-decoration: none;
-  color: white;
-  display: inline-block;
-  padding-top: 15px
-}
-nav a:active{
-  font-weight: bold;
-}
-nav a:hover{
-  color: rgb(139, 139, 139);
-}
-
-.header{
-  padding-top: 7vh;
-  color: white;
-  text-align: center;
-  font-size: 50px;
-}
-
-.gallery{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.cards{
-    position: absolute;
-    width: 14rem;
-    height: 18rem;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.cards li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 14rem;
-    height: 18rem;
-    text-align: center;
-    line-height: 18rem;
-    font-size: 2rem;
-    background-color: #cccccc;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 0.8rem;
-    overflow: hidden;
+    background-color: #161f30;
     color: white;
-  }
+    /*mind. Größe 100vh->Display groß*/
+    min-height: 100vh;
+    /*kein scrolling nach links oder rechts*/
+    overflow-x: hidden;
+}
 
-  img{
+/*Menüleiste oben*/
+.menu{
+    height: 51px;
+    background-color: #0d131dc7;
+    border-width: 0px;
+    border-color: white;
+    border-style: groove;
+    position: fixed;
+    position: -webkit-fixed;
+    position: -moz-fixed;
+    position: -ms-fixed;
+    position: -o-fixed;
+    width: 100%;
+    z-index: 300;
+    overflow: hidden;
+}
+
+/*Icon links an der Menüleiste*/
+.menu img{
+    width: 60px;
+    padding-left: 10px;
+
+}
+
+/*Menüelementmenge*/
+.menu ul{
+    list-style: none;
+}
+
+/*Position der Menüelemente*/
+nav{
+    float: right;
+}
+
+/*einzelne Menüelemente*/
+.menu li{
+    display: inline;
+    padding: 15px
+}
+
+/*Links der Menüelemente zu den entsprechenden Inhalten*/
+nav a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding-top: 15px
+}
+/*Menüelemente wenn man drauf klickt*/
+nav a:active{
+    font-weight: bold;
+}
+
+/*Menüelemente wenn man drauf hovert*/
+nav a:hover{
+    color: rgb(139, 139, 139);
+}
+/*------------Menü Ende-----------------------*/
+
+/*allgemeine Sectionverhalten*/
+section{
     position: relative;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: white;
+}
+/*Hauptüberschrift von firstSection*/
+.teamTitle{
+    padding-top: 50px;
+    font-size: 4em;
+    text-align: center;
+}
+
+.firstSection, .secondSection, .thirdSection, .fourthSection{
+}
+
+/*Hauptdiv in der section*/
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+}
+
+section{
+    width: 50%;
+}
+
+/*Inhalt der Section nach der Hauptüberschrift*/
+.content{
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ImageDiv zum Inhalt aller Section außer firstSection*/
+.content .image{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+/*konkretes Image des Inhalts von allen Section außer firstSection & secondOneSection*/
+.content .image img{
+    z-index: 111;
+    position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-  }
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
-  .actions {
-    position: absolute;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  button {
-    display:inline-block;
-    outline: none;
-    border: none;
-    padding: 8px 14px;
-    background: #ffffff;
-    background-image: -webkit-linear-gradient(top, #ffffff, #414141);
-    background-image: -moz-linear-gradient(top, #ffffff, #414141);
-    background-image: -ms-linear-gradient(top, #ffffff, #414141);
-    background-image: -o-linear-gradient(top, #ffffff, #414141);
-    background-image: linear-gradient(to bottom, #ffffff, #414141);
-    text-shadow: 0px 1px 0px #ffffff;
-    -webkit-box-shadow: 0px 1px 0px 414141;
-    -moz-box-shadow: 0px 1px 0px 414141;
-    box-shadow: 0px 1px 0px 414141;
-    color: #000000;
-    text-decoration: none;
-    margin: 0 auto 10px;
-    -webkit-border-radius: 4;
-    -moz-border-radius: 4;
-    border-radius: 4px;
-    padding: 12px 25px;
-    font-family: "Signika Negative", sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 13px;
-    line-height: 18px;
-  }
-  
-  button:hover {
-    background: #000000;
-    background-image: -webkit-linear-gradient(top, #000000, #2b2b2a);
-    background-image: -moz-linear-gradient(top, #000000, #2b2b2a);
-    background-image: -ms-linear-gradient(top, #000000, #2b2b2a);
-    background-image: -o-linear-gradient(top, #000000, #2b2b2a);
-    background-image: linear-gradient(to bottom, #000000, #2b2b2a);
-    text-shadow: 0px 1px 0px #1d1d1d;
-    -webkit-box-shadow: 0px 1px 0px fefefe;
-    -moz-box-shadow: 0px 1px 0px fefefe;
-    box-shadow: 0px 1px 0px fefefe;
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  button {
-    font-size: 20px;
-    font-weight: 400;
-  }
-  
-  a {
-    color: #000000;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
+.infoTitle{
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+div p{
+    font-size: 1.2em;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
